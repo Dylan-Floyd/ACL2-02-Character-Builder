@@ -2,7 +2,9 @@
 
 exports[`should render our Picker component 1`] = `
 <div>
-  <div>
+  <div
+    class="picker"
+  >
     <label>
       Head:
       <select>

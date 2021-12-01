@@ -2,9 +2,13 @@
 
 exports[`Should render the Catchphrase compononet 1`] = `
 <div>
-  <div>
-    <div>
-      Catchphrases:
+  <div
+    class="catchphrases-container"
+  >
+    Catchphrases:
+    <div
+      class="catchphrases"
+    >
       <p>
         one
       </p>
