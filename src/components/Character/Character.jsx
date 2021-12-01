@@ -9,9 +9,21 @@ export default function Character({
 }) {
   return (
     <div>
-      <div className='char-img-div' style={{ backgroundImage: `url(./${head}-head.png` }} />
-      <div className='char-img-div' style={{ backgroundImage: `url(./${torso}-middle.png` }} />
-      <div className='char-img-div' style={{ backgroundImage: `url(./${legs}-pants.png` }} />
+      <div
+        aria-label='head'
+        className='char-img-div'
+        style={{ backgroundImage: `url(./${head}-head.png)` }}
+      />
+      <div
+        aria-label='torso'
+        className='char-img-div'
+        style={{ backgroundImage: `url(./${torso}-middle.png)` }}
+      />
+      <div
+        aria-label='legs'
+        className='char-img-div'
+        style={{ backgroundImage: `url(./${legs}-pants.png)` }}
+      />
     </div>
   )
 }

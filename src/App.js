@@ -18,25 +18,34 @@ function App() {
 
   return (
     <div className="App">
-      <Character { ...{
-        head,
-        torso,
-        legs
-      } } />
-      <Picker { ...{
-        head,
-        setHead,
-        torso,
-        setTorso,
-        legs,
-        setLegs
-      } } />
-      <Catchphrase { ...{
-        catchphrases,
-        addCatchphrase,
-        newCatchphrase,
-        setNewCatchphrase
-      } } />
+      <h1>Character Builder</h1>
+      <div className='builder'>
+        <div>
+          <h3>Edit Your Character:</h3>
+          <Picker { ...{
+            head,
+            setHead,
+            torso,
+            setTorso,
+            legs,
+            setLegs,
+            addCatchphrase,
+            newCatchphrase,
+            setNewCatchphrase
+          } } />
+          <Catchphrase { ...{
+            catchphrases
+          } } />
+        </div>
+        <div>
+          <h3>Your Character:</h3>
+          <Character { ...{
+            head,
+            torso,
+            legs
+          } } />
+        </div>
+      </div>
     </div>
   )
 }

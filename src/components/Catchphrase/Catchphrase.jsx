@@ -1,20 +1,14 @@
 import React from 'react'
 
+import './Catchphrases.css'
+
 export default function Catchphrase({
-  catchphrases,
-  addCatchphrase,
-  newCatchphrase,
-  setNewCatchphrase
+  catchphrases
 }) {
   return (
-    <div>
-      <label>
-        Enter a Catchphrase:
-        <input type="text" value={newCatchphrase} onChange={(e) => setNewCatchphrase(e.target.value)}></input>
-        <button onClick={addCatchphrase}>Add</button>
-      </label>
-      <div>
-        Catchphrases:
+    <div className='catchphrases-container'>
+      Catchphrases:
+      <div className='catchphrases'>
         {catchphrases.map(phrase => <p key={phrase}>{phrase}</p>)}
       </div>
     </div>

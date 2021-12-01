@@ -1,15 +1,20 @@
 import React from 'react'
 
+import './Picker.css'
+
 export default function Picker({
   head,
   setHead,
   torso,
   setTorso,
   legs,
-  setLegs
+  setLegs,
+  addCatchphrase,
+  newCatchphrase,
+  setNewCatchphrase
 }) {
   return (
-    <div>
+    <div className='picker'>
       <label>
         Head:
         <select value={head} onChange={(e) => setHead(e.target.value)}>
@@ -35,6 +40,11 @@ export default function Picker({
           <option value="leg">Leg</option>
           <option value="white">White</option>
         </select>
+      </label>
+      <label>
+        Add a Catchphrase:
+        <input type="text" value={newCatchphrase} onChange={(e) => setNewCatchphrase(e.target.value)}></input>
+        <button onClick={addCatchphrase}>Add</button>
       </label>
     </div>
   )
