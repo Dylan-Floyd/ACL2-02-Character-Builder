@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the Catchphrase compononet 1`] = `
+<div>
+  <div
+    class="catchphrases-container"
+  >
+    Catchphrases:
+    <div
+      class="catchphrases"
+    >
+      <p>
+        one
+      </p>
+      <p>
+        two
+      </p>
+    </div>
+  </div>
+</div>
+`;

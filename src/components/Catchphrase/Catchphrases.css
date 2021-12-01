@@ -1,0 +1,12 @@
+.catchphrases-container {
+  width: 100%;
+}
+
+.catchphrases {
+  height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .15);
+  border-radius: 10px;
+  
+}

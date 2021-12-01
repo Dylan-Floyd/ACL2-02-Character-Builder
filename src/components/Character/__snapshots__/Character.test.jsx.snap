@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the character component 1`] = `
+<div>
+  <div>
+    <div
+      aria-label="head"
+      class="char-img-div"
+      style="background-image: url(./dog-head.png);"
+    />
+    <div
+      aria-label="torso"
+      class="char-img-div"
+      style="background-image: url(./blue-middle.png);"
+    />
+    <div
+      aria-label="legs"
+      class="char-img-div"
+      style="background-image: url(./leg-pants.png);"
+    />
+  </div>
+</div>
+`;
